@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Medical School Admissions Consulting - Navigate AMCAS, secondary essays, and MMI interviews with expert guidance from consultants who've sat on admissions committees.">
+  <title>Medical School Admissions Consulting | SOS Admissions</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">SOS <span>Admissions</span></a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav">
+        <!-- Undergraduate Dropdown -->
+        <div class="nav__item">
+          <a href="#" class="nav__link">
+            Undergraduate
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+          <div class="nav__dropdown">
+            <a href="#" class="nav__dropdown-link">College Admissions</a>
+            <a href="#" class="nav__dropdown-link">Private School</a>
+            <a href="#" class="nav__dropdown-link">Transfer Students</a>
+          </div>
+        </div>
+
+        <!-- Graduate Dropdown -->
+        <div class="nav__item">
+          <a href="#" class="nav__link">
+            Graduate
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+          <div class="nav__dropdown">
+            <a href="#" class="nav__dropdown-link">Graduate School</a>
+            <a href="#" class="nav__dropdown-link">MBA Programs</a>
+            <a href="#" class="nav__dropdown-link">PhD Programs</a>
+          </div>
+        </div>
+
+        <!-- Medical/Health Dropdown -->
+        <div class="nav__item">
+          <a href="#" class="nav__link">
+            Medical & Health
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+          <div class="nav__dropdown">
+            <a href="medical-school.html" class="nav__dropdown-link">Medical School</a>
+            <a href="#" class="nav__dropdown-link">Medical Residency</a>
+            <a href="#" class="nav__dropdown-link">PA School</a>
+            <a href="#" class="nav__dropdown-link">CRNA Programs</a>
+            <a href="#" class="nav__dropdown-link">Nursing Programs</a>
+            <a href="#" class="nav__dropdown-link">Dental School</a>
+          </div>
+        </div>
+
+        <!-- Law -->
+        <div class="nav__item">
+          <a href="#" class="nav__link">Law School</a>
+        </div>
+
+        <!-- About -->
+        <div class="nav__item">
+          <a href="index.html#about" class="nav__link">About</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="nav__item">
+          <a href="#contact" class="nav__link">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Header CTA -->
+      <div class="header__cta">
+        <a href="tel:310-951-4008" class="header__phone">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          310-951-4008
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav__overlay"></div>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <div class="mobile-nav__section">
+      <div class="mobile-nav__title">Undergraduate</div>
+      <a href="#" class="mobile-nav__link">College Admissions</a>
+      <a href="#" class="mobile-nav__link">Private School</a>
+      <a href="#" class="mobile-nav__link">Transfer Students</a>
+    </div>
+
+    <div class="mobile-nav__section">
+      <div class="mobile-nav__title">Graduate</div>
+      <a href="#" class="mobile-nav__link">Graduate School</a>
+      <a href="#" class="mobile-nav__link">MBA Programs</a>
+      <a href="#" class="mobile-nav__link">PhD Programs</a>
+    </div>
+
+    <div class="mobile-nav__section">
+      <div class="mobile-nav__title">Medical & Health</div>
+      <a href="medical-school.html" class="mobile-nav__link">Medical School</a>
+      <a href="#" class="mobile-nav__link">Medical Residency</a>
+      <a href="#" class="mobile-nav__link">PA School</a>
+      <a href="#" class="mobile-nav__link">CRNA Programs</a>
+      <a href="#" class="mobile-nav__link">Nursing Programs</a>
+      <a href="#" class="mobile-nav__link">Dental School</a>
+    </div>
+
+    <div class="mobile-nav__section">
+      <div class="mobile-nav__title">Law</div>
+      <a href="#" class="mobile-nav__link">Law School</a>
+    </div>
+
+    <div class="mobile-nav__section">
+      <a href="index.html#about" class="mobile-nav__link">About</a>
+      <a href="#contact" class="mobile-nav__link">Contact</a>
+    </div>
+
+    <div class="mobile-nav__cta">
+      <a href="tel:310-951-4008" class="mobile-nav__phone">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+        310-951-4008
+      </a>
+      <a href="#contact" class="btn btn--primary" style="width: 100%;">Free Consultation</a>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__content">
+        <h1>Medical School Admissions Consulting</h1>
+        <p>Navigate AMCAS, secondary essays, and MMI interviews with expert guidance from consultants who've sat on admissions committees.</p>
+        <div class="page-hero__cta">
+          <a href="#contact" class="btn btn--primary btn--large">Free Consultation</a>
+          <a href="tel:310-951-4008" class="btn btn--secondary btn--large">Call 310-951-4008</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Challenge Section -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Medical School Challenge</h2>
+        <p>Understanding the competitive landscape is the first step to standing out.</p>
+      </div>
+
+      <div class="challenge-stats">
+        <div class="challenge-stat">
+          <span class="challenge-stat__number">~40%</span>
+          <span class="challenge-stat__label">Average acceptance rate for those who receive interviews</span>
+        </div>
+        <div class="challenge-stat">
+          <span class="challenge-stat__number">53,000+</span>
+          <span class="challenge-stat__label">Applicants competing for limited spots each year</span>
+        </div>
+        <div class="challenge-stat">
+          <span class="challenge-stat__number">Holistic</span>
+          <span class="challenge-stat__label">Review process where every element matters</span>
+        </div>
+      </div>
+
+      <p class="text-center mt-lg" style="max-width: 700px; margin-left: auto; margin-right: auto; color: var(--color-slate-light);">
+        Medical school admissions is one of the most competitive application processes in higher education. With thousands of qualified candidates vying for limited seats, schools use holistic review to evaluate not just your numbers, but your experiences, character, and potential as a future physician. Every element of your application matters.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services & Pricing Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Services & Pricing</h2>
+        <p>Choose the level of support that fits your needs and budget.</p>
+      </div>
+
+      <!-- Introductory Service -->
+      <h3 style="margin-bottom: var(--spacing-md); margin-top: var(--spacing-xl);">Getting Started</h3>
+      <div class="pricing-grid" style="margin-bottom: var(--spacing-xl);">
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h4 class="pricing-card__title">Application Planning & Evaluation</h4>
+            <div class="pricing-card__price">$465</div>
+          </div>
+          <div class="pricing-card__features">
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Two 45-minute strategy sessions</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Comprehensive application review</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Essay topic guidance</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Letters of recommendation strategy</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Competitiveness assessment</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Credits toward full package</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--outline">Get Started</a>
+        </div>
+      </div>
+
+      <!-- Essay Services -->
+      <h3 style="margin-bottom: var(--spacing-md);">Essay Services</h3>
+      <div class="pricing-grid" style="margin-bottom: var(--spacing-xl);">
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h4 class="pricing-card__title">Personal Statement</h4>
+            <div class="pricing-card__price">$885</div>
+          </div>
+          <div class="pricing-card__features">
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>AMCAS personal statement (up to 5,300 characters)</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Unlimited revisions</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Written from scratch or edited</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Interview + questionnaire process</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--outline">Get Started</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h4 class="pricing-card__title">Activity Descriptions</h4>
+            <div class="pricing-card__price">$785</div>
+          </div>
+          <div class="pricing-card__features">
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>All 15 AMCAS activities</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Most meaningful essays</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Strategic positioning</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Unlimited revisions</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--outline">Get Started</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h4 class="pricing-card__title">Secondary Essays</h4>
+            <div class="pricing-card__price">$985 <span>first school</span></div>
+          </div>
+          <div class="pricing-card__features">
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>All essays for that school</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>School-specific research</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Unlimited revisions</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Additional schools: $675 each</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--outline">Get Started</a>
+        </div>
+      </div>
+
+      <!-- Interview Preparation -->
+      <h3 style="margin-bottom: var(--spacing-md);">Interview Preparation</h3>
+      <div class="pricing-grid" style="margin-bottom: var(--spacing-xl);">
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h4 class="pricing-card__title">Traditional Interview Prep</h4>
+            <div class="pricing-card__price">$1,475</div>
+          </div>
+          <div class="pricing-card__features">
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>2-hour coaching session</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>1-hour mock interview</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Common questions guide</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Recording for review</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--outline">Get Started</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h4 class="pricing-card__title">MMI Interview Prep</h4>
+            <div class="pricing-card__price">$1,775</div>
+          </div>
+          <div class="pricing-card__features">
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>3-hour coaching session (includes MMI scenarios)</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>1-hour mock interview</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>MMI scenario practice</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Recording for review</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--outline">Get Started</a>
+        </div>
+      </div>
+
+      <!-- Comprehensive Package -->
+      <h3 style="margin-bottom: var(--spacing-md);">Comprehensive Package</h3>
+      <div class="pricing-grid">
+        <div class="pricing-card pricing-card--featured" style="grid-column: 1 / -1; max-width: 500px; margin: 0 auto;">
+          <div class="pricing-card__header">
+            <h4 class="pricing-card__title">Complete Medical School Package</h4>
+            <div class="pricing-card__price">$5,675 <span>+ $775/additional school</span></div>
+          </div>
+          <div class="pricing-card__features" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-xs);">
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Everything above included</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>School selection strategy</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Primary application review</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>All secondary essays</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Interview preparation</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Letters of recommendation assistance</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Unlimited support through decision</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Waitlist strategy if needed</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--primary btn--large" style="margin-top: var(--spacing-md);">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose SOS Section -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Choose SOS Admissions</h2>
+        <p>Expert guidance from consultants who know medical admissions inside and out.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+            </svg>
+          </div>
+          <div class="feature-item__content">
+            <h4>Admissions Committee Experience</h4>
+            <p>Our consultants have sat on medical school admissions committees and know exactly what schools are looking for.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+            </svg>
+          </div>
+          <div class="feature-item__content">
+            <h4>Deep AMCAS & AACOMAS Understanding</h4>
+            <p>We understand the nuances of both MD and DO application systems and can help you navigate either path.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+            </svg>
+          </div>
+          <div class="feature-item__content">
+            <h4>MMI & Traditional Interview Expertise</h4>
+            <p>Whether you're facing MMI stations or traditional interviews, we'll prepare you to perform confidently.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+          </div>
+          <div class="feature-item__content">
+            <h4>Reapplicant Specialists Available</h4>
+            <p>Didn't get in the first time? Our reapplicant specialists can help identify what went wrong and strengthen your next application.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Timeline -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Medical School Application Timeline</h2>
+        <p>Understanding the timeline helps you plan and stay ahead of deadlines.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-item__date">12-18 Months Before</div>
+          <h4 class="timeline-item__title">Planning & Preparation</h4>
+          <p class="timeline-item__description">Identify your target schools, build your activity list, secure letter writers, and develop your personal narrative.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__date">January - April</div>
+          <h4 class="timeline-item__title">MCAT Preparation</h4>
+          <p class="timeline-item__description">Take or retake the MCAT. Most students aim to complete testing by April for best school list options.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__date">May - June</div>
+          <h4 class="timeline-item__title">Primary Application</h4>
+          <p class="timeline-item__description">AMCAS opens in May. Submit your primary application as early as possible - ideally in the first two weeks.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__date">July - September</div>
+          <h4 class="timeline-item__title">Secondary Essays</h4>
+          <p class="timeline-item__description">Schools send secondaries within weeks of verification. Quick turnaround (2 weeks or less) demonstrates interest.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__date">September - March</div>
+          <h4 class="timeline-item__title">Interviews</h4>
+          <p class="timeline-item__description">Interview season begins in September. Prepare thoroughly - this is your chance to bring your application to life.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__date">March - April</div>
+          <h4 class="timeline-item__title">Decision</h4>
+          <p class="timeline-item__description">Schools release decisions through April 30. You'll need to narrow down to one school by then.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header">
+        <h2>Success Stories</h2>
+        <p>Real results from students who trusted us with their medical school applications.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">SOS Admissions helped me understand what admissions committees actually want to see. I was admitted to Johns Hopkins after working with them on my entire application.</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">Photo</div>
+            <div class="testimonial-card__info">
+              <div class="testimonial-card__name">David M.</div>
+              <div class="testimonial-card__school">Johns Hopkins School of Medicine</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">After being rejected my first cycle, I was devastated. SOS helped me identify gaps in my application and present a much stronger narrative. I matched into my top choice residency program.</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">Photo</div>
+            <div class="testimonial-card__info">
+              <div class="testimonial-card__name">Priya S.</div>
+              <div class="testimonial-card__school">Cardiology Residency, UCLA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">The MMI prep was incredible. I practiced dozens of scenarios and learned how to structure my responses. I was accepted to 4 medical schools and had my pick!</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">Photo</div>
+            <div class="testimonial-card__info">
+              <div class="testimonial-card__name">Alex T.</div>
+              <div class="testimonial-card__school">Admitted to 4 MD Programs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about our medical school admissions consulting services.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            When should I start working with a consultant?
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer__content">
+              <p>Ideally, you should start 12-18 months before you plan to submit your application. This gives you time to strengthen your activities, refine your narrative, and complete essays without rushing. However, we work with students at all stages - even those who need help right before submission.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you help with AMCAS and AACOMAS?
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer__content">
+              <p>Yes! We have extensive experience with both the MD (AMCAS) and DO (AACOMAS) application systems. Our consultants understand the differences between the two and can help you optimize your application for either or both paths.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What if I don't get in? Do you help reapplicants?
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer__content">
+              <p>Absolutely. We have specialists who focus specifically on reapplicants. We'll help you analyze what went wrong, identify areas for improvement, and present a stronger application the next cycle. Many reapplicants we've worked with have successfully gained admission.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How do your letter of recommendation services work?
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer__content">
+              <p>We help you identify the best letter writers, coach you on how to approach them, and provide guidance on what information to share with your recommenders. We can also review letter drafts (when writers share them) to ensure they're strong and aligned with your overall application narrative.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can you help with MD-PhD applications?
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer__content">
+              <p>Yes! MD-PhD applications require additional essays and a different narrative focus. Our consultants have experience helping students present compelling research narratives while also demonstrating clinical commitment. We can help with the additional research statements required for these programs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="section section--navy cta-section">
+    <div class="container">
+      <h2>Ready to Start Your Medical School Journey?</h2>
+      <p>Get expert guidance from consultants who've been on the other side of the admissions table.</p>
+      <div class="cta-section__phone">
+        <a href="tel:310-951-4008">310-951-4008</a>
+      </div>
+      <a href="#contact" class="btn btn--primary btn--large">Free Consultation</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section--cream">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <h2>Get In Touch</h2>
+          <p>Ready to discuss your medical school admissions goals? Contact us for a free consultation. We'll help you understand your options and recommend the right services for your needs.</p>
+
+          <div class="contact__details">
+            <div class="contact__item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <a href="tel:310-951-4008">310-951-4008</a>
+            </div>
+
+            <div class="contact__item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+              </svg>
+              <a href="mailto:interviewsos2@gmail.com">interviewsos2@gmail.com</a>
+            </div>
+
+            <div class="contact__item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>Mon-Fri 9am-6pm PST</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__form-placeholder">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+          </svg>
+          <p>Contact form will be embedded here</p>
+          <p style="font-size: 0.8125rem; margin-top: 0.5rem;">(Wufoo or similar integration)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>SOS <span>Admissions</span></h3>
+          <p>The largest full-service admissions consulting company in the US and Canada. Expert guidance for college, graduate, medical, law, and business school applications since 1998.</p>
+        </div>
+
+        <div class="footer__column">
+          <h4>Undergraduate</h4>
+          <div class="footer__links">
+            <a href="#">College Admissions</a>
+            <a href="#">Private School</a>
+            <a href="#">Transfer Students</a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Graduate</h4>
+          <div class="footer__links">
+            <a href="#">Graduate School</a>
+            <a href="#">MBA Programs</a>
+            <a href="#">PhD Programs</a>
+            <a href="#">Law School</a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Medical & Health</h4>
+          <div class="footer__links">
+            <a href="medical-school.html">Medical School</a>
+            <a href="#">Medical Residency</a>
+            <a href="#">PA School</a>
+            <a href="#">Nursing Programs</a>
+            <a href="#">Dental School</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 1998-2026 SOS Admissions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
