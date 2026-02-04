@@ -264,13 +264,19 @@ p:last-child {
 }
 
 .header__logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-white);
+  display: flex;
+  align-items: center;
 }
 
-.header__logo span {
-  color: var(--color-gold);
+.header__logo img {
+  height: 40px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .header__logo img {
+    height: 48px;
+  }
 }
 
 /* Desktop Navigation */
@@ -1532,9 +1538,9 @@ p:last-child {
 .video-wrapper {
   position: relative;
   width: 100%;
-  max-width: 800px;
+  max-width: 640px;
   margin: 0 auto;
-  padding-bottom: 56.25%;
+  padding-bottom: min(56.25%, 360px);
   height: 0;
   overflow: hidden;
   border-radius: 12px;
