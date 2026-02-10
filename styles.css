@@ -561,57 +561,17 @@ p:last-child {
   margin: 0 auto;
 }
 
-/* Hero with form variant */
-.hero--with-form .hero__content {
-  text-align: left;
-  max-width: none;
-  margin: 0;
-}
-
-.hero__grid {
-  position: relative;
-  z-index: 1;
+/* Homepage split: video + form side by side */
+.homepage-split {
   display: grid;
-  gap: var(--spacing-lg);
-  align-items: center;
+  gap: 2rem;
+  align-items: start;
 }
 
 @media (min-width: 768px) {
-  .hero__grid {
-    grid-template-columns: 1fr 380px;
-    gap: var(--spacing-xl);
+  .homepage-split {
+    grid-template-columns: 1.2fr 1fr;
   }
-}
-
-.hero--with-form .hero__subtitle {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.hero--with-form {
-  overflow: visible;
-}
-
-.hero__form {
-  background: var(--color-white);
-  padding: var(--spacing-lg);
-  border-radius: 12px;
-  box-shadow: var(--shadow-xl);
-}
-
-.hero__form h3 {
-  font-size: 1.2rem;
-  color: var(--color-navy);
-  margin-bottom: var(--spacing-md);
-  text-align: center;
-}
-
-.hero__form .form-group label {
-  color: var(--color-slate);
-}
-
-.hero__form .form-group textarea {
-  min-height: 80px;
 }
 
 .hero__title {

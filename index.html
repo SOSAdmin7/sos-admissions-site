@@ -161,40 +161,15 @@
     </div>
   </nav>
 
-  <!-- Hero Section with Form -->
-  <section class="hero hero--with-form">
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="container">
-      <div class="hero__grid">
-        <div class="hero__content">
-          <h1 class="hero__title">Interview Coaching & Mock Interview Experts</h1>
-          <p class="hero__subtitle">Interview preparation for job seekers and applicants to college, graduate school, medical school, and MBA programs. We turn nervous candidates into confident, polished interviewees.</p>
-          <div class="hero__cta">
-            <a href="tel:1-800-212-2670" class="btn btn--secondary btn--large">Call 1-800-212-2670</a>
-          </div>
-        </div>
-        <div class="hero__form">
-          <h3>Get a Free Consultation</h3>
-          <form name="homepage-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
-            <input type="hidden" name="form-name" value="homepage-contact">
-            <p style="display: none;"><label>Don't fill this out: <input name="bot-field"></label></p>
-            <div class="form-group">
-              <label for="hp-name">Name <span style="color: #c00;">*</span></label>
-              <input type="text" id="hp-name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="hp-email">Email <span style="color: #c00;">*</span></label>
-              <input type="email" id="hp-email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="hp-phone">Phone Number <span style="color: #c00;">*</span></label>
-              <input type="tel" id="hp-phone" name="phone" required>
-            </div>
-            <div class="form-group">
-              <label for="hp-message">How Can We Help You?</label>
-              <textarea id="hp-message" name="message" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary btn--block">Submit</button>
-          </form>
+      <div class="hero__content">
+        <h1 class="hero__title">Interview Coaching & Mock Interview Experts</h1>
+        <p class="hero__subtitle">Interview preparation for job seekers and applicants to college, graduate school, medical school, and MBA programs. We turn nervous candidates into confident, polished interviewees.</p>
+        <div class="hero__cta">
+          <a href="#contact-form" class="btn btn--primary btn--large">Free Consultation</a>
+          <a href="tel:1-800-212-2670" class="btn btn--secondary btn--large">Call 1-800-212-2670</a>
         </div>
       </div>
     </div>
@@ -213,14 +188,40 @@
     </div>
   </section>
 
-  <!-- Video Section -->
-  <section class="section">
+  <!-- Video + Form Section -->
+  <section id="contact-form" class="section" style="padding-top: var(--spacing-xl); padding-bottom: var(--spacing-xl);">
     <div class="container">
-      <div class="section-header">
-        <h2>Our Interview Coaches Will Help You Succeed</h2>
-      </div>
-      <div class="video-wrapper" style="max-width: 800px; margin: 0 auto;">
-        <iframe src="https://www.youtube.com/embed/PSskKV4LNYg" title="Interview SOS - Admissions Coaching" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <div style="display: grid; gap: 2rem; align-items: start;" class="homepage-split">
+        <div>
+          <h2 style="margin-bottom: 1rem;">Our Interview Coaches Will Help You Succeed</h2>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/PSskKV4LNYg" title="Interview SOS - Admissions Coaching" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+        <div style="background: #f9f8f5; padding: 2rem; border-radius: 12px; border: 1px solid #e2e8f0;">
+          <h3 style="font-size: 1.3rem; margin-bottom: 1.25rem; text-align: center; color: var(--color-navy);">Get a Free Consultation</h3>
+          <form name="homepage-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="homepage-contact">
+            <p style="display: none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+            <div class="form-group">
+              <label for="hp-name"><strong>Name</strong> <span style="color: #c00;">*</span></label>
+              <input type="text" id="hp-name" name="name" required style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 1rem;">
+            </div>
+            <div class="form-group">
+              <label for="hp-email"><strong>Email</strong> <span style="color: #c00;">*</span></label>
+              <input type="email" id="hp-email" name="email" required style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 1rem;">
+            </div>
+            <div class="form-group">
+              <label for="hp-phone"><strong>Phone Number</strong> <span style="color: #c00;">*</span></label>
+              <input type="tel" id="hp-phone" name="phone" required style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 1rem;">
+            </div>
+            <div class="form-group">
+              <label for="hp-message"><strong>How Can We Help You?</strong></label>
+              <textarea id="hp-message" name="message" rows="3" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 1rem; resize: vertical;"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block" style="margin-top: 0.5rem;">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
