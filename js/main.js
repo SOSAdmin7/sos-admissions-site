@@ -106,12 +106,12 @@
   // FAQ Accordion
   // --------------------------------------------------------------------------
   function initFaqAccordion() {
-    const faqItems = document.querySelectorAll('.faq-item');
+    const faqItems = document.querySelectorAll('.faq__item');
     if (!faqItems.length) return;
 
     faqItems.forEach(function(item) {
-      const question = item.querySelector('.faq-question');
-      const answer = item.querySelector('.faq-answer');
+      const question = item.querySelector('.faq__question');
+      const answer = item.querySelector('.faq__answer');
 
       if (!question || !answer) return;
 

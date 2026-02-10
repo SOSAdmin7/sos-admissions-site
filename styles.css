@@ -588,10 +588,14 @@ p:last-child {
   margin-right: 0;
 }
 
+.hero--with-form {
+  overflow: visible;
+}
+
 .hero__form {
   background: var(--color-white);
   padding: var(--spacing-lg);
-  border-radius: var(--radius-lg);
+  border-radius: 12px;
   box-shadow: var(--shadow-xl);
 }
 
