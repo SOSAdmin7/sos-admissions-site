@@ -2039,6 +2039,43 @@ p:last-child {
 }
 
 /* --------------------------------------------------------------------------
+   Hero Split (Video + Form side by side)
+   -------------------------------------------------------------------------- */
+.hero-split {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .hero-split {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: start;
+  }
+}
+
+.hero-split__video h2 {
+  margin-bottom: var(--spacing-md);
+  font-size: 1.5rem;
+}
+
+.hero-split__form {
+  background: var(--color-cream);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid #e5e5e5;
+}
+
+.hero-split__form h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.hero-split__form .form-group textarea {
+  min-height: 80px;
+}
+
+/* --------------------------------------------------------------------------
    Testimonials Page Grid
    -------------------------------------------------------------------------- */
 .testimonials-page-grid {
