@@ -561,6 +561,55 @@ p:last-child {
   margin: 0 auto;
 }
 
+/* Hero with form variant */
+.hero--with-form .hero__content {
+  text-align: left;
+  max-width: none;
+  margin: 0;
+}
+
+.hero__grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: var(--spacing-lg);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hero__grid {
+    grid-template-columns: 1fr 380px;
+    gap: var(--spacing-xl);
+  }
+}
+
+.hero--with-form .hero__subtitle {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero__form {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+}
+
+.hero__form h3 {
+  font-size: 1.2rem;
+  color: var(--color-navy);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.hero__form .form-group label {
+  color: var(--color-slate);
+}
+
+.hero__form .form-group textarea {
+  min-height: 80px;
+}
+
 .hero__title {
   color: var(--color-white);
   margin-bottom: var(--spacing-md);
@@ -2038,42 +2087,6 @@ p:last-child {
   resize: vertical;
 }
 
-/* --------------------------------------------------------------------------
-   Hero Split (Video + Form side by side)
-   -------------------------------------------------------------------------- */
-.hero-split {
-  display: grid;
-  gap: var(--spacing-lg);
-}
-
-@media (min-width: 768px) {
-  .hero-split {
-    grid-template-columns: 1.2fr 1fr;
-    align-items: center;
-  }
-}
-
-.hero-split__video h2 {
-  margin-bottom: var(--spacing-md);
-  font-size: 1.5rem;
-}
-
-.hero-split__form {
-  background: var(--color-cream);
-  padding: var(--spacing-lg);
-  border-radius: var(--radius-lg);
-  border: 1px solid #e5e5e5;
-}
-
-.hero-split__form h3 {
-  font-size: 1.25rem;
-  margin-bottom: var(--spacing-md);
-  text-align: center;
-}
-
-.hero-split__form .form-group textarea {
-  min-height: 80px;
-}
 
 /* --------------------------------------------------------------------------
    Testimonials Page Grid
