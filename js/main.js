@@ -13,6 +13,8 @@
     initStickyHeader();
     initFaqAccordion();
     initSmoothScroll();
+    initTestimonialFilter();
+    initEventTracking();
   });
 
   // --------------------------------------------------------------------------
@@ -75,7 +77,6 @@
     const header = document.querySelector('.header');
     if (!header) return;
 
-    let lastScrollY = window.scrollY;
     let ticking = false;
 
     window.addEventListener('scroll', function() {
@@ -97,8 +98,6 @@
       } else {
         header.classList.remove('header--scrolled');
       }
-
-      lastScrollY = scrollY;
     }
   }
 
@@ -159,6 +158,77 @@
         window.scrollTo({
           top: targetPosition,
           behavior: 'smooth'
+        });
+      });
+    });
+  }
+
+  // --------------------------------------------------------------------------
+  // Testimonial Category Filter
+  // --------------------------------------------------------------------------
+  function initTestimonialFilter() {
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    if (!filterTabs.length) return;
+
+    const testimonialCards = document.querySelectorAll('.testimonial-card[data-category]');
+    if (!testimonialCards.length) return;
+
+    filterTabs.forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        const category = this.getAttribute('data-filter');
+
+        // Update active tab
+        filterTabs.forEach(function(t) { t.classList.remove('active'); });
+        this.classList.add('active');
+
+        // Filter cards
+        testimonialCards.forEach(function(card) {
+          if (category === 'all' || card.getAttribute('data-category') === category) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+
+  // --------------------------------------------------------------------------
+  // GA4 Custom Event Tracking
+  // --------------------------------------------------------------------------
+  function initEventTracking() {
+    if (typeof gtag !== 'function') return;
+
+    // Track audience splitter clicks (job vs admissions)
+    document.querySelectorAll('.splitter__card a, .splitter__card .btn').forEach(function(el) {
+      el.addEventListener('click', function() {
+        var card = this.closest('.splitter__card');
+        var audience = card && card.querySelector('h3') ? card.querySelector('h3').textContent.trim() : 'unknown';
+        gtag('event', 'splitter_click', { audience: audience });
+      });
+    });
+
+    // Track "Free Consultation" / booking CTA clicks
+    document.querySelectorAll('a[href*="book.html"], .header__cta-btn').forEach(function(el) {
+      el.addEventListener('click', function() {
+        gtag('event', 'book_call_click', { link_text: this.textContent.trim() });
+      });
+    });
+
+    // Track phone number clicks
+    document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        gtag('event', 'phone_click', { phone_number: this.href.replace('tel:', '') });
+      });
+    });
+
+    // Track form submissions
+    document.querySelectorAll('form').forEach(function(form) {
+      form.addEventListener('submit', function() {
+        var formType = this.querySelector('[name="Service Type"]');
+        gtag('event', 'form_submit', {
+          form_location: window.location.pathname,
+          service_type: formType ? formType.value : 'N/A'
         });
       });
     });

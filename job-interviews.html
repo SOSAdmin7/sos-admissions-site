@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Expert job interview coaching and mock interviews. Behavioral, case, panel, video, technical, and executive interview preparation. Starting at $275.">
+  <title>Job Interview Coaching & Mock Interviews | Interview SOS</title>
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7WC2BJ93D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-V7WC2BJ93D');
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <svg class="header__logo-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="19" fill="#2774AE" stroke="#fff" stroke-width="1.5"/>
+          <circle cx="20" cy="13" r="4" fill="#fff"/>
+          <path d="M12 28c0-4.4 3.6-8 8-8s8 3.6 8 8" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="11" cy="15" r="3" fill="#fff"/>
+          <path d="M5 26c0-3.3 2.7-6 6-6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="29" cy="15" r="3" fill="#fff"/>
+          <path d="M35 26c0-3.3-2.7-6-6-6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="header__logo-text">Interview <span>SOS</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav">
+        <div class="nav__item">
+          <a href="/job-interviews.html" class="nav__link nav__link--active">Job Interviews</a>
+        </div>
+
+        <div class="nav__item">
+          <a href="#" class="nav__link">
+            Admissions Interviews
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+          <div class="nav__dropdown">
+            <a href="/admissions-interviews/college/" class="nav__dropdown-link">College Interviews</a>
+            <a href="/admissions-interviews/medical/" class="nav__dropdown-link">Medical School</a>
+            <a href="/admissions-interviews/mba/" class="nav__dropdown-link">MBA Interviews</a>
+            <a href="/admissions-interviews/law/" class="nav__dropdown-link">Law School</a>
+            <a href="/admissions-interviews/graduate/" class="nav__dropdown-link">Graduate School</a>
+            <a href="/admissions-interviews.html" class="nav__dropdown-link nav__dropdown-link--all">View All Programs</a>
+          </div>
+        </div>
+
+        <div class="nav__item">
+          <a href="/about.html" class="nav__link">About</a>
+        </div>
+
+        <div class="nav__item">
+          <a href="/testimonials.html" class="nav__link">Testimonials</a>
+        </div>
+
+        <div class="nav__item">
+          <a href="/pricing.html" class="nav__link">Pricing</a>
+        </div>
+      </nav>
+
+      <!-- Header CTA -->
+      <div class="header__cta">
+        <a href="/book.html" class="btn btn--primary btn--sm">Free Consultation</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav__overlay"></div>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <div class="mobile-nav__section">
+      <a href="/job-interviews.html" class="mobile-nav__link mobile-nav__link--active">Job Interview Coaching</a>
+    </div>
+
+    <div class="mobile-nav__section">
+      <div class="mobile-nav__title">Admissions Interviews</div>
+      <a href="/admissions-interviews/college/" class="mobile-nav__link">College Interviews</a>
+      <a href="/admissions-interviews/medical/" class="mobile-nav__link">Medical School</a>
+      <a href="/admissions-interviews/mba/" class="mobile-nav__link">MBA Interviews</a>
+      <a href="/admissions-interviews/law/" class="mobile-nav__link">Law School</a>
+      <a href="/admissions-interviews/graduate/" class="mobile-nav__link">Graduate School</a>
+      <a href="/admissions-interviews.html" class="mobile-nav__link">View All Programs</a>
+    </div>
+
+    <div class="mobile-nav__section">
+      <a href="/about.html" class="mobile-nav__link">About Us</a>
+      <a href="/testimonials.html" class="mobile-nav__link">Testimonials</a>
+      <a href="/pricing.html" class="mobile-nav__link">Pricing</a>
+    </div>
+
+    <div class="mobile-nav__cta">
+      <a href="tel:1-800-212-2670" class="mobile-nav__phone">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+        1-800-212-2670
+      </a>
+      <a href="/book.html" class="btn btn--primary" style="width: 100%;">Free Consultation</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero hero--subpage">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__breadcrumb">
+          <a href="index.html">Home</a> / <span>Job Interview Coaching</span>
+        </div>
+        <h1 class="hero__title">Expert Interview Coaching for Job Seekers</h1>
+        <p class="hero__subtitle">Practice with real feedback, not scripts. Mock interviews, personalized coaching, and confidence-building techniques. Starting at $275.</p>
+        <p class="hero__proof">98% client satisfaction rate | 15+ years of experience</p>
+        <div class="hero__cta">
+          <a href="/book.html" class="btn btn--primary btn--large">Book Your Free Consultation</a>
+          <a href="tel:1-800-212-2670" class="btn btn--secondary btn--large">Call 1-800-212-2670</a>
+        </div>
+        <p class="privacy-note">Your materials are confidential and used only for your coaching sessions. We never share your information.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Help With -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What We Help With</h2>
+        <p>Comprehensive interview preparation for all types of job interviews.</p>
+      </div>
+
+      <div class="features-grid features-grid--cards">
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+          </div>
+          <h3>Behavioral Interviews</h3>
+          <p>Master the STAR method and craft compelling stories that demonstrate your skills and experience.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3>Case Interviews</h3>
+          <p>Prepare for consulting and analytical case interviews with structured frameworks.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3>Panel Interviews</h3>
+          <p>Learn techniques for engaging multiple interviewers and managing group dynamics.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3>Video Interviews</h3>
+          <p>Perfect your on-camera presence for Zoom, HireVue, and other video interview formats.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <h3>Technical Interviews</h3>
+          <p>Prepare for technical questions and demonstrate your expertise with confidence.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3>Executive Interviews</h3>
+          <p>Senior-level interview preparation for leadership and C-suite positions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Helps Overcome -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header">
+        <h2>Interview Preparation Helps Overcome</h2>
+      </div>
+      <div class="features-grid features-grid--cards">
+        <div class="feature-card">
+          <div class="feature-card__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg></div>
+          <h3>Lack of Confidence</h3>
+          <p>Build the self-assurance you need to present your best self in any interview setting.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg></div>
+          <h3>Nervousness &amp; Anxiety</h3>
+          <p>Learn proven techniques to manage interview stress and stay calm under pressure.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+          <h3>Common Questions</h3>
+          <p>Master the answers to frequently asked interview questions across all industries.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg></div>
+          <h3>English as a Second Language</h3>
+          <p>Improve your English language interview skills with targeted coaching and practice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-Step Process -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our 5-Step Process</h2>
+        <p>A proven approach to help you prepare quickly and effectively.</p>
+      </div>
+
+      <div class="steps steps--5">
+        <div class="step">
+          <div class="step__number">1</div>
+          <h3 class="step__title">Free Consultation</h3>
+          <p class="step__description">Tell us about your goals and we'll match you with the right coach.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__number">2</div>
+          <h3 class="step__title">Share Your Materials</h3>
+          <p class="step__description">Send us your resume, job description, and background information.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__number">3</div>
+          <h3 class="step__title">Custom Strategy</h3>
+          <p class="step__description">We develop tailored answers and an interview game plan.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__number">4</div>
+          <h3 class="step__title">Mock Interview</h3>
+          <p class="step__description">Practice with realistic simulations and receive detailed feedback.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__number">5</div>
+          <h3 class="step__title">Ace Your Interview</h3>
+          <p class="step__description">Walk in confident, prepared, and ready to impress.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="section section--cream">
+    <div class="container">
+      <div class="section-header">
+        <h2>Interview Coaching Packages</h2>
+        <p>Choose the package that fits your needs. All sessions conducted via Skype, Zoom, phone, or in-person.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Mock Interview -->
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__title">Mock Interview</h3>
+            <div class="pricing-card__price">$275</div>
+            <p class="pricing-card__subtitle">Single session</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              60-minute mock interview
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Realistic interview simulation
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Detailed feedback on your answers
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Tips on body language &amp; delivery
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Follow-up question list
+            </li>
+          </ul>
+          <a href="/payment.html" class="btn btn--outline btn--block">Order Now</a>
+        </div>
+
+        <!-- Coaching Package -->
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__badge">Most Popular</div>
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__title">Job Interview Coaching</h3>
+            <div class="pricing-card__price">$395</div>
+            <p class="pricing-card__subtitle">120 Minutes</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Everything in Mock Interview
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Pre-interview strategy session
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Custom answer development
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Anticipated questions list
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Resume &amp; background review
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Email support between sessions
+            </li>
+          </ul>
+          <a href="/payment.html" class="btn btn--primary btn--block">Order Now</a>
+        </div>
+
+        <!-- Full Package -->
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__title">Full Job Search Package</h3>
+            <div class="pricing-card__price">$595</div>
+            <p class="pricing-card__subtitle">150 Minutes</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Resume review &amp; optimization
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Cover letter writing
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Mock interview session
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Interview coaching session
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Salary negotiation guidance
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              30-day email support
+            </li>
+          </ul>
+          <a href="/payment.html" class="btn btn--outline btn--block">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Success Stories</h2>
+        <p>Real results from job seekers who trusted Interview SOS.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">Vijay coached me to interview for 2 accounting jobs. I got an offer at both, so that's 100%. I was really nervous before the first interview, and he helped me out with that. The salary negotiations more than paid for the coaching.</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">J</div>
+            <div class="testimonial-card__info">
+              <div class="testimonial-card__name">James R.</div>
+              <div class="testimonial-card__school">Senior Accountant Position</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">I was unemployed for 8 months and had been through dozens of interviews. After just one session with Interview SOS, I could immediately tell the difference. I landed a job within 2 weeks.</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">M</div>
+            <div class="testimonial-card__info">
+              <div class="testimonial-card__name">Michelle T.</div>
+              <div class="testimonial-card__school">Marketing Manager Position</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">The mock interview was incredibly realistic. My coach pointed out habits I didn't even know I had. By the time I had my real interview, I felt like I had already done it a dozen times.</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">D</div>
+            <div class="testimonial-card__info">
+              <div class="testimonial-card__name">David K.</div>
+              <div class="testimonial-card__school">Software Engineering Role at Google</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-lg">
+        <a href="/testimonials.html" class="btn btn--outline">Read More Success Stories</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries We Serve -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header">
+        <h2>Industries We Serve</h2>
+        <p>Our coaches have experience across all major industries.</p>
+      </div>
+
+      <div class="industries-grid">
+        <div class="industry-tag">Technology</div>
+        <div class="industry-tag">Finance &amp; Banking</div>
+        <div class="industry-tag">Consulting</div>
+        <div class="industry-tag">Healthcare</div>
+        <div class="industry-tag">Marketing &amp; Advertising</div>
+        <div class="industry-tag">Law</div>
+        <div class="industry-tag">Accounting</div>
+        <div class="industry-tag">Engineering</div>
+        <div class="industry-tag">Government</div>
+        <div class="industry-tag">Non-Profit</div>
+        <div class="industry-tag">Real Estate</div>
+        <div class="industry-tag">Entertainment</div>
+        <div class="industry-tag">Education</div>
+        <div class="industry-tag">Retail</div>
+        <div class="industry-tag">Manufacturing</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq">
+        <div class="faq__item">
+          <button class="faq__question">
+            How soon before my interview should I book a session?
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Ideally, book at least 3-5 days before your interview. This gives you time to practice and internalize the strategies. However, we've helped clients prepare in as little as 24 hours when needed. We're available 7 days a week.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            Do you work with people in my industry?
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Yes! We've worked with clients across every major industry including tech, finance, healthcare, consulting, law, marketing, and many more. Our coaches adapt their approach to match your specific industry's interview style and expectations.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            What if I don't get the job?
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>While we can't guarantee you'll get every job (many factors are outside our control), we can guarantee you'll interview at your absolute best. The skills and confidence you gain apply to every future interview, making our coaching an investment in your career.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            Are sessions in-person or virtual?
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>We offer sessions via Skype, Zoom, FaceTime, phone, or in-person at our Los Angeles office. Most clients prefer video sessions as they're convenient and allow us to coach your on-camera presence—increasingly important as more companies use video interviews.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            How much does interview coaching cost?
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Our job interview coaching packages start at $275 for a single mock interview session. Our most popular package is $395 for 120 minutes of strategy and mock interview coaching. We also offer a full job search package at $595 that includes resume review and salary negotiation guidance.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            Is it worth it to hire an interview coach?
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Most of our clients report that the confidence and skills they gain translate directly into better job offers and higher salaries. Many clients say the salary negotiations alone more than paid for the coaching.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="section section--navy cta-section">
+    <div class="container">
+      <h2>Ready to Land Your Dream Job?</h2>
+      <p>Schedule a free 15-minute consultation to discuss your interview and how we can help.</p>
+      <div class="cta-section__phone">
+        <a href="tel:1-800-212-2670">1-800-212-2670</a>
+      </div>
+      <div style="display: flex; gap: var(--spacing-sm); justify-content: center; flex-wrap: wrap;">
+        <a href="/book.html" class="btn btn--primary btn--large">Book Your Free Consultation</a>
+        <a href="/pricing.html" class="btn btn--secondary btn--large">View Pricing</a>
+      </div>
+      <p class="privacy-note">Your materials are confidential and used only for your coaching sessions. We never share your information.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3 class="footer__logo">Interview <span>SOS</span></h3>
+          <p>Interview coaching and mock interview experts. We help job seekers land their dream jobs and students gain admission to top universities. Serving clients worldwide via Skype, Zoom, and in-person in Los Angeles.</p>
+        </div>
+
+        <div class="footer__column">
+          <h4>Job Seekers</h4>
+          <div class="footer__links">
+            <a href="/job-interviews.html">Job Coaching</a>
+            <a href="/pricing.html">Pricing</a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Admissions</h4>
+          <div class="footer__links">
+            <a href="/admissions-interviews.html">All Programs</a>
+            <a href="/admissions-interviews/medical/">Medical School</a>
+            <a href="/admissions-interviews/college/">College</a>
+            <a href="/admissions-interviews/mba/">MBA</a>
+            <a href="/admissions-interviews/law/">Law School</a>
+            <a href="/admissions-interviews/graduate/">Graduate School</a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Company</h4>
+          <div class="footer__links">
+            <a href="/about.html">About</a>
+            <a href="/testimonials.html">Testimonials</a>
+            <a href="/book.html">Book a Consultation</a>
+            <a href="/payment.html">Payment</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2010-2026 Interview SOS. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

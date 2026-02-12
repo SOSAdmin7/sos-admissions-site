@@ -6,19 +6,28 @@
   <meta name="description" content="Read success stories from Interview SOS clients. See how our coaching has helped job seekers and students achieve their goals.">
   <title>Testimonials & Success Stories | Interview SOS</title>
 
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7WC2BJ93D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-V7WC2BJ93D');
+  </script>
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <div class="header__inner">
-      <a href="index.html" class="header__logo">
+      <a href="/index.html" class="header__logo">
         <svg class="header__logo-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
           <circle cx="20" cy="20" r="19" fill="#2774AE" stroke="#fff" stroke-width="1.5"/>
           <circle cx="20" cy="13" r="4" fill="#fff"/>
@@ -34,54 +43,37 @@
       <!-- Desktop Navigation -->
       <nav class="nav">
         <div class="nav__item">
-          <a href="job-interview-prep.html" class="nav__link">Job Interviews</a>
+          <a href="/job-interviews.html" class="nav__link">Job Interviews</a>
         </div>
 
         <div class="nav__item">
-          <a href="#" class="nav__link">
-            Admissions Interviews
+          <a href="/admissions-interviews.html" class="nav__link">
+            Admissions
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
             </svg>
           </a>
           <div class="nav__dropdown">
-            <a href="https://sosadmissions.com/college-interviews/" class="nav__dropdown-link">College Interviews</a>
-            <a href="https://sosadmissions.com/college-transfers/" class="nav__dropdown-link">College Transfers</a>
-            <a href="https://sosadmissions.com/private-school-admissions/" class="nav__dropdown-link">Private School</a>
-            <a href="https://sosadmissions.com/bs-md-admissions-consulting/" class="nav__dropdown-link">BS/MD Programs</a>
-            <a href="https://sosadmissions.com/graduate-school-interview/" class="nav__dropdown-link">Graduate School</a>
-            <a href="https://sosadmissions.com/graduate-school-application/" class="nav__dropdown-link">Masters Programs</a>
-            <a href="https://sosadmissions.com/phd-application-consulting/" class="nav__dropdown-link">Doctoral Programs</a>
-            <a href="https://sosadmissions.com/mba-interview/" class="nav__dropdown-link">MBA / Business School</a>
-            <a href="https://sosadmissions.com/medical-school-interview/" class="nav__dropdown-link">Medical School</a>
-            <a href="https://sosadmissions.com/medical-residency-interview/" class="nav__dropdown-link">Medical Residency</a>
-            <a href="https://sosadmissions.com/dental-school-application/" class="nav__dropdown-link">Dental School</a>
-            <a href="https://sosadmissions.com/general-nursing/" class="nav__dropdown-link">Nursing</a>
-            <a href="https://sosadmissions.com/nurse-practitioner-admissions/" class="nav__dropdown-link">Nurse Practitioner</a>
-            <a href="https://sosadmissions.com/crna-admissions/" class="nav__dropdown-link">CRNA</a>
-            <a href="https://sosadmissions.com/pa-school-admissions-consulting/" class="nav__dropdown-link">PA School</a>
-            <a href="https://sosadmissions.com/veterinary-school-admissions/" class="nav__dropdown-link">Veterinary School</a>
-            <a href="https://sosadmissions.com/law-school-application/" class="nav__dropdown-link">Law School</a>
-            <a href="https://sosadmissions.com/psychology-counseling-admissions/" class="nav__dropdown-link">Psychology & Counseling</a>
-            <a href="https://sosadmissions.com/computer-science-admissions-consultant/" class="nav__dropdown-link">Computer Science</a>
-            <a href="https://sosadmissions.com/speech-language-pathology-slp-admissions-consultant/" class="nav__dropdown-link">Speech Language Pathology</a>
+            <a href="/admissions-interviews/college/" class="nav__dropdown-link">College</a>
+            <a href="/admissions-interviews/medical/" class="nav__dropdown-link">Medical</a>
+            <a href="/admissions-interviews/mba/" class="nav__dropdown-link">MBA</a>
+            <a href="/admissions-interviews/law/" class="nav__dropdown-link">Law</a>
+            <a href="/admissions-interviews/graduate/" class="nav__dropdown-link">Graduate</a>
+            <hr style="border: none; border-top: 1px solid var(--color-border); margin: 0.5rem 0;">
+            <a href="/admissions-interviews.html" class="nav__dropdown-link" style="font-weight: 600;">View All Programs</a>
           </div>
         </div>
 
         <div class="nav__item">
-          <a href="services.html" class="nav__link">Services</a>
+          <a href="/about.html" class="nav__link">About Us</a>
         </div>
 
         <div class="nav__item">
-          <a href="testimonials.html" class="nav__link nav__link--active">Testimonials</a>
+          <a href="/testimonials.html" class="nav__link nav__link--active">Testimonials</a>
         </div>
 
         <div class="nav__item">
-          <a href="about.html" class="nav__link">About</a>
-        </div>
-
-        <div class="nav__item">
-          <a href="contact.html" class="nav__link">Contact</a>
+          <a href="/pricing.html" class="nav__link">Pricing</a>
         </div>
       </nav>
 
@@ -93,6 +85,7 @@
           </svg>
           1-800-212-2670
         </a>
+        <a href="/book.html" class="header__cta-btn">Free Consultation</a>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -110,38 +103,23 @@
   <!-- Mobile Navigation -->
   <nav class="mobile-nav">
     <div class="mobile-nav__section">
-      <a href="job-interview-prep.html" class="mobile-nav__link">Job Interview Coaching</a>
+      <a href="/job-interviews.html" class="mobile-nav__link">Job Interview Coaching</a>
     </div>
 
     <div class="mobile-nav__section">
       <div class="mobile-nav__title">Admissions Interviews</div>
-      <a href="https://sosadmissions.com/college-interviews/" class="mobile-nav__link">College Interviews</a>
-      <a href="https://sosadmissions.com/college-transfers/" class="mobile-nav__link">College Transfers</a>
-      <a href="https://sosadmissions.com/private-school-admissions/" class="mobile-nav__link">Private School</a>
-      <a href="https://sosadmissions.com/bs-md-admissions-consulting/" class="mobile-nav__link">BS/MD Programs</a>
-      <a href="https://sosadmissions.com/graduate-school-interview/" class="mobile-nav__link">Graduate School</a>
-      <a href="https://sosadmissions.com/graduate-school-application/" class="mobile-nav__link">Masters Programs</a>
-      <a href="https://sosadmissions.com/phd-application-consulting/" class="mobile-nav__link">Doctoral Programs</a>
-      <a href="https://sosadmissions.com/mba-interview/" class="mobile-nav__link">MBA / Business School</a>
-      <a href="https://sosadmissions.com/medical-school-interview/" class="mobile-nav__link">Medical School</a>
-      <a href="https://sosadmissions.com/medical-residency-interview/" class="mobile-nav__link">Medical Residency</a>
-      <a href="https://sosadmissions.com/dental-school-application/" class="mobile-nav__link">Dental School</a>
-      <a href="https://sosadmissions.com/general-nursing/" class="mobile-nav__link">Nursing</a>
-      <a href="https://sosadmissions.com/nurse-practitioner-admissions/" class="mobile-nav__link">Nurse Practitioner</a>
-      <a href="https://sosadmissions.com/crna-admissions/" class="mobile-nav__link">CRNA</a>
-      <a href="https://sosadmissions.com/pa-school-admissions-consulting/" class="mobile-nav__link">PA School</a>
-      <a href="https://sosadmissions.com/veterinary-school-admissions/" class="mobile-nav__link">Veterinary School</a>
-      <a href="https://sosadmissions.com/law-school-application/" class="mobile-nav__link">Law School</a>
-      <a href="https://sosadmissions.com/psychology-counseling-admissions/" class="mobile-nav__link">Psychology & Counseling</a>
-      <a href="https://sosadmissions.com/computer-science-admissions-consultant/" class="mobile-nav__link">Computer Science</a>
-      <a href="https://sosadmissions.com/speech-language-pathology-slp-admissions-consultant/" class="mobile-nav__link">Speech Language Pathology</a>
-</div>
+      <a href="/admissions-interviews/college/" class="mobile-nav__link">College</a>
+      <a href="/admissions-interviews/medical/" class="mobile-nav__link">Medical</a>
+      <a href="/admissions-interviews/mba/" class="mobile-nav__link">MBA</a>
+      <a href="/admissions-interviews/law/" class="mobile-nav__link">Law</a>
+      <a href="/admissions-interviews/graduate/" class="mobile-nav__link">Graduate</a>
+      <a href="/admissions-interviews.html" class="mobile-nav__link" style="font-weight: 600;">View All Programs</a>
+    </div>
 
     <div class="mobile-nav__section">
-      <a href="services.html" class="mobile-nav__link">Services & Pricing</a>
-      <a href="testimonials.html" class="mobile-nav__link">Testimonials</a>
-      <a href="about.html" class="mobile-nav__link">About Us</a>
-      <a href="contact.html" class="mobile-nav__link">Contact</a>
+      <a href="/about.html" class="mobile-nav__link">About Us</a>
+      <a href="/testimonials.html" class="mobile-nav__link">Testimonials</a>
+      <a href="/pricing.html" class="mobile-nav__link">Pricing</a>
     </div>
 
     <div class="mobile-nav__cta">
@@ -151,7 +129,7 @@
         </svg>
         1-800-212-2670
       </a>
-      <a href="contact.html" class="btn btn--primary" style="width: 100%;">Free Consultation</a>
+      <a href="/book.html" class="btn btn--primary" style="width: 100%;">Free Consultation</a>
     </div>
   </nav>
 
@@ -160,7 +138,7 @@
     <div class="container">
       <div class="hero__content">
         <div class="hero__breadcrumb">
-          <a href="index.html">Home</a> / <span>Testimonials</span>
+          <a href="/index.html">Home</a> / <span>Testimonials</span>
         </div>
         <h1 class="hero__title">Success Stories</h1>
         <p class="hero__subtitle">Read what our clients say about their experience with Interview SOS. Real results from real people.</p>
@@ -185,23 +163,30 @@
           <span class="stat-card__label">Years of experience</span>
         </div>
         <div class="stat-card">
-          <span class="stat-card__number">5★</span>
+          <span class="stat-card__number">5&#9733;</span>
           <span class="stat-card__label">Yelp rating</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Medical School Testimonials -->
+  <!-- All Testimonials with Filter -->
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2>Medical School Success Stories</h2>
-        <p>95.3% of our medical school clients get accepted.</p>
+        <h2>Client Testimonials</h2>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="medical">Medical</button>
+        <button class="filter-tab" data-filter="job">Job</button>
+        <button class="filter-tab" data-filter="college">College &amp; Graduate</button>
       </div>
 
       <div class="testimonials-page-grid">
-        <div class="testimonial-card">
+        <!-- Medical Testimonials -->
+        <div class="testimonial-card" data-category="medical">
           <p class="testimonial-card__quote">I HIGHLY recommend Interview SOS. Vijay thoroughly prepared me on how to talk about myself, answer common questions, and handle difficult questions. Of seven interviews, I was accepted at four schools and wait-listed at two.</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">A</div>
@@ -212,7 +197,7 @@
           </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-category="medical">
           <p class="testimonial-card__quote">The MMI prep was invaluable. I practiced so many scenarios that when I did my actual interview at UCLA, I felt like I had already done it before. Now I'm a first-year medical student!</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">J</div>
@@ -223,7 +208,7 @@
           </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-category="medical">
           <p class="testimonial-card__quote">I was just interviewed by LMU and 99% of what he coached me on showed up! Even with random questions they asked, I was confident and prepared enough to answer them.</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">C</div>
@@ -234,7 +219,7 @@
           </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-category="medical">
           <p class="testimonial-card__quote">As a reapplicant, I was nervous about my second cycle. Interview SOS helped me understand what went wrong the first time and completely transformed my interview skills. This time I got multiple acceptances!</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">R</div>
@@ -244,20 +229,9 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Job Interview Testimonials -->
-  <section class="section section--cream">
-    <div class="container">
-      <div class="section-header">
-        <h2>Job Interview Success Stories</h2>
-        <p>Helping professionals land their dream jobs.</p>
-      </div>
-
-      <div class="testimonials-page-grid">
-        <div class="testimonial-card">
+        <!-- Job Testimonials -->
+        <div class="testimonial-card" data-category="job">
           <p class="testimonial-card__quote">Vijay coached me to interview for 2 accounting jobs. I got an offer at both, so that's 100%. I was really nervous before the first interview, and he helped me out with that. The salary negotiations more than paid for the coaching.</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">J</div>
@@ -268,7 +242,7 @@
           </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-category="job">
           <p class="testimonial-card__quote">I was unemployed for 8 months and had been through dozens of interviews. After just one session with Interview SOS, I could immediately tell the difference. I landed a job within 2 weeks.</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">M</div>
@@ -279,7 +253,7 @@
           </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-category="job">
           <p class="testimonial-card__quote">The mock interview was incredibly realistic. My coach pointed out habits I didn't even know I had. By the time I had my real interview, I felt like I had already done it a dozen times.</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">D</div>
@@ -290,7 +264,7 @@
           </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-category="job">
           <p class="testimonial-card__quote">I'd been in the same role for 10 years and felt rusty about interviewing. Interview SOS brought me up to speed on modern interview techniques. I got a 40% raise at my new company!</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">S</div>
@@ -300,20 +274,9 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- College & Graduate School Testimonials -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>College & Graduate School Success Stories</h2>
-        <p>Helping students get into their dream schools.</p>
-      </div>
-
-      <div class="testimonials-page-grid">
-        <div class="testimonial-card">
+        <!-- College & Graduate Testimonials -->
+        <div class="testimonial-card" data-category="college">
           <p class="testimonial-card__quote">My daughter was extremely nervous before her Harvard alumni interview. After just one session, she felt confident and prepared. She was accepted Early Action!</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">S</div>
@@ -324,7 +287,7 @@
           </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-category="college">
           <p class="testimonial-card__quote">The mock interview was incredibly realistic. I felt like I had already done my real interview by the time I met with the Yale alumni. Vijay's coaching made all the difference.</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">M</div>
@@ -335,7 +298,7 @@
           </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-category="college">
           <p class="testimonial-card__quote">I was waitlisted at my top choice initially. Interview SOS helped me prepare for the follow-up interview, and I was admitted off the waitlist two weeks later!</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">E</div>
@@ -346,7 +309,7 @@
           </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-category="college">
           <p class="testimonial-card__quote">The MBA interview coaching was exactly what I needed. Vijay helped me articulate my career goals clearly and concisely. I got into Wharton!</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">K</div>
@@ -385,8 +348,8 @@
         <a href="tel:1-800-212-2670">1-800-212-2670</a>
       </div>
       <div style="display: flex; gap: var(--spacing-sm); justify-content: center; flex-wrap: wrap;">
-        <a href="contact.html" class="btn btn--primary btn--large">Free Consultation</a>
-        <a href="services.html" class="btn btn--secondary btn--large">View Services</a>
+        <a href="/book.html" class="btn btn--primary btn--large">Free Consultation</a>
+        <a href="/pricing.html" class="btn btn--secondary btn--large">View Pricing</a>
       </div>
     </div>
   </section>
@@ -397,36 +360,36 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <h3 class="footer__logo">Interview <span>SOS</span></h3>
-          <p>Interview coaching and mock interview experts. We help job seekers land their dream jobs and students gain admission to top universities. Serving clients worldwide via Skype, Zoom, and in-person in Los Angeles.</p>
+          <p>Interview coaching and mock interview experts. We help job seekers land their dream jobs and students gain admission to top universities. Serving clients worldwide via Zoom, phone, and in-person in Los Angeles.</p>
         </div>
 
         <div class="footer__column">
           <h4>Job Seekers</h4>
           <div class="footer__links">
-            <a href="job-interview-prep.html">Interview Coaching</a>
-            <a href="resumes.html">Resume Services</a>
-            <a href="services.html">All Services</a>
+            <a href="/job-interviews.html">Job Coaching</a>
+            <a href="/pricing.html">Pricing</a>
           </div>
         </div>
 
         <div class="footer__column">
           <h4>Admissions</h4>
           <div class="footer__links">
-            <a href="college-interviews.html">College Interviews</a>
-            <a href="medical-school-interviews.html">Medical School</a>
-            <a href="mba-interviews.html">MBA Interviews</a>
-            <a href="graduate-school.html">Graduate School</a>
-            <a href="law-school.html">Law School</a>
+            <a href="/admissions-interviews.html">All Programs</a>
+            <a href="/admissions-interviews/medical/">Medical</a>
+            <a href="/admissions-interviews/college/">College</a>
+            <a href="/admissions-interviews/mba/">MBA</a>
+            <a href="/admissions-interviews/law/">Law</a>
+            <a href="/admissions-interviews/graduate/">Graduate</a>
           </div>
         </div>
 
         <div class="footer__column">
           <h4>Company</h4>
           <div class="footer__links">
-            <a href="about.html">About Us</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="contact.html">Contact</a>
-            <a href="payment.html">Payment</a>
+            <a href="/about.html">About</a>
+            <a href="/testimonials.html">Testimonials</a>
+            <a href="/book.html">Book</a>
+            <a href="/payment.html">Payment</a>
           </div>
         </div>
       </div>
@@ -438,6 +401,6 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>

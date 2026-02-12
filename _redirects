@@ -1,0 +1,18 @@
+/job-interview-prep       /job-interviews.html     301
+/job-interview-prep.html  /job-interviews.html     301
+/contact                  /book.html               301
+/contact.html             /book.html               301
+/services                 /pricing.html            301
+/services.html            /pricing.html            301
+
+# Old admissions pages → new paths
+/medical-school-interviews        /admissions-interviews/medical/   301
+/medical-school-interviews.html   /admissions-interviews/medical/   301
+/college-interviews               /admissions-interviews/college/   301
+/college-interviews.html          /admissions-interviews/college/   301
+/mba-interviews                   /admissions-interviews/mba/       301
+/mba-interviews.html              /admissions-interviews/mba/       301
+/law-school                       /admissions-interviews/law/       301
+/law-school.html                  /admissions-interviews/law/       301
+/graduate-school                  /admissions-interviews/graduate/  301
+/graduate-school.html             /admissions-interviews/graduate/  301
