@@ -23,41 +23,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 
   <!-- Styles -->
-  <style>
-/* Critical CSS - above the fold */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Source Sans 3',system-ui,-apple-system,sans-serif;color:#334155;line-height:1.6}
-.header{background-color:#1B2A4A;position:sticky;top:0;z-index:100;padding:.75rem 0}
-.header__inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between}
-.header__logo{display:flex;align-items:center;gap:.625rem}
-.header__logo-full{height:36px;width:auto;flex-shrink:0}
-.nav{display:none}
-@media(min-width:1024px){.nav{display:flex;align-items:center;gap:.25rem}}
-.nav__link{color:rgba(255,255,255,.85);padding:.5rem .75rem;font-size:.9375rem;text-decoration:none}
-.header__cta{display:flex;align-items:center;gap:.75rem}
-.header__phone{display:none;color:rgba(255,255,255,.85);text-decoration:none;font-size:.875rem}
-@media(min-width:768px){.header__phone{display:flex;align-items:center;gap:.375rem}.header__logo-full{height:42px}}
-.header__cta-btn{background-color:#C4983B;color:#fff;padding:.5rem 1.25rem;border-radius:8px;font-weight:600;font-size:.875rem;text-decoration:none}
-.mobile-menu-btn{display:flex;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.25rem}
-@media(min-width:1024px){.mobile-menu-btn{display:none}}
-.mobile-menu-btn span{display:block;width:24px;height:2px;background-color:#fff;border-radius:2px}
-.hero{background-color:#1B2A4A;padding:4rem 0;text-align:center}
-.container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
-.hero__title{color:#fff;margin-bottom:1rem;font-size:clamp(1.75rem,5vw,3rem)}
-.hero__subtitle{color:rgba(255,255,255,.85);font-size:clamp(1.125rem,2.5vw,1.375rem);margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto}
-.hero__cta{display:flex;flex-direction:column;gap:.75rem;align-items:center}
-@media(min-width:480px){.hero__cta{flex-direction:row;justify-content:center}}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:.75rem 1.5rem;border-radius:8px;font-weight:600;text-decoration:none;font-size:1rem;border:none;cursor:pointer}
-.btn--primary{background-color:#C4983B;color:#fff}
-.btn--secondary{background-color:transparent;color:#fff;border:2px solid rgba(255,255,255,.3)}
-.btn--large{padding:.875rem 2rem;font-size:1.125rem}
-.section{padding:3rem 0}
-@media(min-width:768px){.section{padding:4rem 0}}
-.mobile-nav__overlay,.mobile-nav{display:none}
-  </style>
-  <link rel="preload" as="style" href="styles.css">
-  <link href="styles.css" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="styles.css"></noscript>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Header -->
@@ -191,11 +157,11 @@ body{font-family:'Source Sans 3',system-ui,-apple-system,sans-serif;color:#33415
               <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
-          <h3>Job Interviews</h3>
+          <h2 class="splitter__title">Job Interviews</h2>
           <p style="color: var(--color-gold-dark); font-weight: 600; font-size: 1.125rem; margin-bottom: var(--spacing-xs);">Land Your Dream Job</p>
           <p>Mock interviews, personalized coaching, and real feedback for any role or industry.</p>
           <div class="splitter__proof">98% client satisfaction rate</div>
-          <a href="/job-interviews.html" class="btn btn--primary">Get Started</a>
+          <a href="/job-interviews.html" class="btn btn--primary">Explore Job Coaching</a>
         </div>
 
         <!-- Admissions Interviews Card -->
@@ -206,11 +172,11 @@ body{font-family:'Source Sans 3',system-ui,-apple-system,sans-serif;color:#33415
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
             </svg>
           </div>
-          <h3>Admissions Interviews</h3>
+          <h2 class="splitter__title">Admissions Interviews</h2>
           <p style="color: var(--color-gold-dark); font-weight: 600; font-size: 1.125rem; margin-bottom: var(--spacing-xs);">Get Accepted</p>
           <p>College, medical school, MBA, law, and graduate school interview prep.</p>
           <div class="splitter__proof">95.3% medical school acceptance rate | 1,000+ Ivy League acceptances</div>
-          <a href="/admissions-interviews.html" class="btn btn--primary">Get Started</a>
+          <a href="/admissions-interviews.html" class="btn btn--primary">Explore Admissions Prep</a>
         </div>
       </div>
     </div>
@@ -230,7 +196,7 @@ body{font-family:'Source Sans 3',system-ui,-apple-system,sans-serif;color:#33415
         <div class="homepage-split__video">
           <h2 style="margin-bottom: var(--spacing-md);">Hear From Our Clients</h2>
           <div class="video-wrapper video-facade" id="yt-facade">
-  <img src="https://i.ytimg.com/vi/4J77y_ghB4k/hqdefault.jpg" alt="Play Interview SOS Client Testimonials" width="480" height="360" loading="lazy" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;cursor:pointer;">
+  <img src="/images/yt-thumb.webp" alt="Play Interview SOS Client Testimonials" width="480" height="360" loading="lazy" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;cursor:pointer;">
   <button class="video-facade__play" aria-label="Play video" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:48px;background:red;border:none;border-radius:14px;cursor:pointer;z-index:1;">
     <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7c-.8-2.9-2.5-5.4-5.4-6.2C55.8.1 34 0 34 0S12.2.1 6.9 1.6c-2.9.7-4.6 3.2-5.4 6.1C.1 13-.1 19.3-.1 24s.2 11 1.6 16.3c.8 2.9 2.5 5.4 5.4 6.2C12.2 48 34 48 34 48s21.8 0 27.1-1.6c2.9-.7 4.6-3.2 5.4-6.1C68 35 68 28.7 68 24s0-11-1.5-16.3z" fill="red"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
   </button>
