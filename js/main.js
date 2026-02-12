@@ -15,6 +15,7 @@
     initSmoothScroll();
     initTestimonialFilter();
     initEventTracking();
+    initYouTubeFacade();
   });
 
   // --------------------------------------------------------------------------
@@ -191,6 +192,28 @@
         });
       });
     });
+  }
+
+  // --------------------------------------------------------------------------
+  // YouTube Facade (lazy-load iframe on click)
+  // --------------------------------------------------------------------------
+  function initYouTubeFacade() {
+    var facade = document.getElementById('yt-facade');
+    if (!facade) return;
+
+    function loadVideo() {
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube.com/embed/4J77y_ghB4k?autoplay=1';
+      iframe.title = 'Interview SOS Client Testimonials';
+      iframe.setAttribute('frameborder', '0');
+      iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;';
+      facade.innerHTML = '';
+      facade.appendChild(iframe);
+    }
+
+    facade.addEventListener('click', loadVideo);
   }
 
   // --------------------------------------------------------------------------

@@ -7,7 +7,7 @@
   <title>Interview SOS | Interview Coaching & Mock Interview Experts</title>
 
   <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7WC2BJ93D"></script>
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-V7WC2BJ93D"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
@@ -18,17 +18,53 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
+  <style>
+/* Critical CSS - above the fold */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Source Sans 3',system-ui,-apple-system,sans-serif;color:#334155;line-height:1.6}
+.header{background-color:#1B2A4A;position:sticky;top:0;z-index:100;padding:.75rem 0}
+.header__inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between}
+.header__logo{display:flex;align-items:center;gap:.625rem}
+.header__logo-full{height:36px;width:auto;flex-shrink:0}
+.nav{display:none}
+@media(min-width:1024px){.nav{display:flex;align-items:center;gap:.25rem}}
+.nav__link{color:rgba(255,255,255,.85);padding:.5rem .75rem;font-size:.9375rem;text-decoration:none}
+.header__cta{display:flex;align-items:center;gap:.75rem}
+.header__phone{display:none;color:rgba(255,255,255,.85);text-decoration:none;font-size:.875rem}
+@media(min-width:768px){.header__phone{display:flex;align-items:center;gap:.375rem}.header__logo-full{height:42px}}
+.header__cta-btn{background-color:#C4983B;color:#fff;padding:.5rem 1.25rem;border-radius:8px;font-weight:600;font-size:.875rem;text-decoration:none}
+.mobile-menu-btn{display:flex;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.25rem}
+@media(min-width:1024px){.mobile-menu-btn{display:none}}
+.mobile-menu-btn span{display:block;width:24px;height:2px;background-color:#fff;border-radius:2px}
+.hero{background-color:#1B2A4A;padding:4rem 0;text-align:center}
+.container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.hero__title{color:#fff;margin-bottom:1rem;font-size:clamp(1.75rem,5vw,3rem)}
+.hero__subtitle{color:rgba(255,255,255,.85);font-size:clamp(1.125rem,2.5vw,1.375rem);margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto}
+.hero__cta{display:flex;flex-direction:column;gap:.75rem;align-items:center}
+@media(min-width:480px){.hero__cta{flex-direction:row;justify-content:center}}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.75rem 1.5rem;border-radius:8px;font-weight:600;text-decoration:none;font-size:1rem;border:none;cursor:pointer}
+.btn--primary{background-color:#C4983B;color:#fff}
+.btn--secondary{background-color:transparent;color:#fff;border:2px solid rgba(255,255,255,.3)}
+.btn--large{padding:.875rem 2rem;font-size:1.125rem}
+.section{padding:3rem 0}
+@media(min-width:768px){.section{padding:4rem 0}}
+.mobile-nav__overlay,.mobile-nav{display:none}
+  </style>
+  <link rel="preload" as="style" href="styles.css">
+  <link href="styles.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <div class="header__inner">
       <a href="index.html" class="header__logo">
-        <img src="/images/interviewsos-logo-dark.svg" alt="Interview SOS - Premium Interview Coaching" class="header__logo-full">
+        <img src="/images/interviewsos-logo-dark.svg" alt="Interview SOS - Premium Interview Coaching" class="header__logo-full" width="400" height="100">
       </a>
 
       <!-- Desktop Navigation -->
@@ -129,6 +165,7 @@
     </div>
   </nav>
 
+  <main>
   <!-- 1. Hero Section -->
   <section class="hero">
     <div class="container">
@@ -192,9 +229,12 @@
       <div class="homepage-split">
         <div class="homepage-split__video">
           <h2 style="margin-bottom: var(--spacing-md);">Hear From Our Clients</h2>
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/4J77y_ghB4k" title="Interview SOS Client Testimonials" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
+          <div class="video-wrapper video-facade" id="yt-facade">
+  <img src="https://i.ytimg.com/vi/4J77y_ghB4k/hqdefault.jpg" alt="Play Interview SOS Client Testimonials" width="480" height="360" loading="lazy" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;cursor:pointer;">
+  <button class="video-facade__play" aria-label="Play video" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:48px;background:red;border:none;border-radius:14px;cursor:pointer;z-index:1;">
+    <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7c-.8-2.9-2.5-5.4-5.4-6.2C55.8.1 34 0 34 0S12.2.1 6.9 1.6c-2.9.7-4.6 3.2-5.4 6.1C.1 13-.1 19.3-.1 24s.2 11 1.6 16.3c.8 2.9 2.5 5.4 5.4 6.2C12.2 48 34 48 34 48s21.8 0 27.1-1.6c2.9-.7 4.6-3.2 5.4-6.1C68 35 68 28.7 68 24s0-11-1.5-16.3z" fill="red"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
+  </button>
+</div>
         </div>
         <div class="homepage-form">
           <h3 style="text-align: center; margin-bottom: var(--spacing-sm);">Get a Free Consultation</h3>
@@ -233,14 +273,14 @@
     <div class="container">
       <div class="universities__label">Our Clients Have Been Accepted To</div>
       <div class="universities__grid">
-        <span class="universities__logo"><img src="images/logos/harvard.svg" alt="Harvard University" loading="lazy"></span>
-        <span class="universities__logo"><img src="images/logos/yale.svg" alt="Yale University" loading="lazy"></span>
-        <span class="universities__logo"><img src="images/logos/stanford.svg" alt="Stanford University" loading="lazy"></span>
-        <span class="universities__logo"><img src="images/logos/mit.svg" alt="MIT" loading="lazy"></span>
-        <span class="universities__logo"><img src="images/logos/columbia.svg" alt="Columbia University" loading="lazy"></span>
-        <span class="universities__logo"><img src="images/logos/ucla.svg" alt="UCLA" loading="lazy"></span>
-        <span class="universities__logo"><img src="images/logos/usc.svg" alt="USC" loading="lazy"></span>
-        <span class="universities__logo"><img src="images/logos/nyu.svg" alt="NYU" loading="lazy"></span>
+        <span class="universities__logo"><img src="images/logos/harvard.svg" alt="Harvard University" loading="lazy" width="120" height="40"></span>
+        <span class="universities__logo"><img src="images/logos/yale.svg" alt="Yale University" loading="lazy" width="120" height="40"></span>
+        <span class="universities__logo"><img src="images/logos/stanford.svg" alt="Stanford University" loading="lazy" width="120" height="40"></span>
+        <span class="universities__logo"><img src="images/logos/mit.svg" alt="MIT" loading="lazy" width="120" height="40"></span>
+        <span class="universities__logo"><img src="images/logos/columbia.svg" alt="Columbia University" loading="lazy" width="120" height="40"></span>
+        <span class="universities__logo"><img src="images/logos/ucla.svg" alt="UCLA" loading="lazy" width="120" height="40"></span>
+        <span class="universities__logo"><img src="images/logos/usc.svg" alt="USC" loading="lazy" width="120" height="40"></span>
+        <span class="universities__logo"><img src="images/logos/nyu.svg" alt="NYU" loading="lazy" width="120" height="40"></span>
       </div>
     </div>
   </section>
@@ -372,6 +412,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
