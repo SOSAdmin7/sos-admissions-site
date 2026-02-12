@@ -584,6 +584,13 @@ p:last-child {
   }
 }
 
+.homepage-form {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: var(--spacing-lg);
+}
+
 .hero__title {
   color: var(--color-white);
   margin-bottom: var(--spacing-md);
