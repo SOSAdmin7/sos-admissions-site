@@ -4,6 +4,8 @@
 /contact.html             /book.html               301
 /services                 /pricing.html            301
 /services.html            /pricing.html            301
+/about-us                 /about                   301
+/about-us/                /about                   301
 
 # Old admissions pages → new paths
 /medical-school-interviews        /admissions-interviews/medical/   301
